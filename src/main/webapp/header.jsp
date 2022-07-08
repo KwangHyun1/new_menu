@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>머먹지</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -23,6 +23,9 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/best.menu">메뉴 추천</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/login.menu">로그인</a>
     </li>
   </ul>
   </nav>

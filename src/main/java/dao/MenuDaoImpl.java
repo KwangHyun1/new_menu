@@ -121,7 +121,8 @@ public class MenuDaoImpl implements MenuDao{
 					e.printStackTrace();
 				}
 			}
-		}return list;
+		}
+		return list;
 	}
 
 	@Override

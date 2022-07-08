@@ -57,6 +57,9 @@ public class Controller extends HttpServlet {
 		}else if(uriArr[0].equals("/best")) {  //uri.equals("/insert.menu") uriArr[0].equals("/insert")
 			System.out.println("best.jsp 로 이동");
 			site = "/best.jsp";
+		}else if(uriArr[0].equals("/login")) {  //uri.equals("/insert.menu") uriArr[0].equals("/insert")
+			System.out.println("login.jsp 로 이동");
+			site = "/LoginServlet";
 		}else {
 			System.out.println("404.jsp 로 이동");
 			site = "/404.jsp";
