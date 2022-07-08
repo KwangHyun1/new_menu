@@ -17,7 +17,7 @@ public class TbUserDaoImpl implements TbUserDao {
 		Connection conn =null; 			//연결을 맺어낼 객체
 		PreparedStatement ps = null;	//명령을 선언할 객체
 		ResultSet rs = null; 			//결과값을 담아낼 객체
-		TbUser dto = new TbUser();
+		TbUser dto = null;   // 이 메소드에서 전달값
 		
 		try {
 			//드라이버 로딩
@@ -32,6 +32,7 @@ public class TbUserDaoImpl implements TbUserDao {
 			rs = ps.executeQuery(); //명렁어 실행
 
 			if(rs.next()) {
+				dto = new TbUser();
 				System.out.println("로그인 성공");
 				// 데이터를 셋팅
 				dto.setId(rs.getInt("id"));
@@ -68,7 +69,7 @@ public class TbUserDaoImpl implements TbUserDao {
 				}
 			}
 		}
-		return null;
+		return dto;
 		
 	}
 
